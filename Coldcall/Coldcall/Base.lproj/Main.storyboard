@@ -16,14 +16,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh1-np-6nF">
-                                <rect key="frame" x="20" y="94" width="374" height="105"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gh1-np-6nF">
+                                <rect key="frame" x="20" y="94" width="374" height="174"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSu-Ue-wvg">
-                                <rect key="frame" x="20" y="745" width="374" height="76"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ldg-Fk-fRD">
+                                <rect key="frame" x="50" y="491.5" width="314" height="101.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="43"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OSu-Ue-wvg">
+                                <rect key="frame" x="50" y="727" width="314" height="55"/>
                                 <color key="backgroundColor" systemColor="systemTealColor"/>
                                 <color key="tintColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
@@ -38,22 +44,25 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OSu-Ue-wvg" secondAttribute="bottom" constant="20" id="2cN-jQ-aBa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gh1-np-6nF" secondAttribute="bottom" constant="642" id="2un-ko-rSd"/>
-                            <constraint firstItem="Gh1-np-6nF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3wr-Xv-f0L"/>
-                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="9Z7-zM-DDR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OSu-Ue-wvg" secondAttribute="trailing" constant="20" id="Ele-65-7rS"/>
-                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0848214" id="QQA-XF-9Ec"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gh1-np-6nF" secondAttribute="trailing" constant="20" id="TEb-qH-HVa"/>
-                            <constraint firstItem="Gh1-np-6nF" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="Xh7-ac-8Xm"/>
-                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.903382" id="jFR-j3-8kL"/>
-                            <constraint firstItem="Gh1-np-6nF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="v7J-nG-P74"/>
-                            <constraint firstItem="Gh1-np-6nF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.117188" id="vbg-8A-rY4"/>
-                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="650.5" id="vmi-EY-bL9"/>
+                            <constraint firstItem="Ldg-Fk-fRD" firstAttribute="top" secondItem="Gh1-np-6nF" secondAttribute="bottom" constant="223.5" id="2ZW-Fy-qSj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ldg-Fk-fRD" secondAttribute="trailing" constant="50" id="3yE-Jj-j01"/>
+                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="6gI-YG-oGZ"/>
+                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="top" secondItem="Ldg-Fk-fRD" secondAttribute="bottom" constant="134" id="Bzi-J7-MSm"/>
+                            <constraint firstItem="Ldg-Fk-fRD" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.113281" id="Fsb-Gl-ciY"/>
+                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.0613839" id="L3y-hD-5SL"/>
+                            <constraint firstItem="Gh1-np-6nF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="QNN-47-HXm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gh1-np-6nF" secondAttribute="trailing" constant="20" id="RuH-QK-jIJ"/>
+                            <constraint firstItem="Ldg-Fk-fRD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="dqo-AQ-sqG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="OSu-Ue-wvg" secondAttribute="bottom" constant="80" id="gGC-iR-sFL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="OSu-Ue-wvg" secondAttribute="trailing" constant="50" id="jLe-cy-c1R"/>
+                            <constraint firstItem="OSu-Ue-wvg" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.758454" id="lbE-mI-SXH"/>
+                            <constraint firstItem="Gh1-np-6nF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="t9X-j3-gHK"/>
+                            <constraint firstItem="Gh1-np-6nF" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.194196" id="xaO-bx-ya0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="NameLabel" destination="Gh1-np-6nF" id="B5e-DE-7d4"/>
+                        <outlet property="Numincrease" destination="Ldg-Fk-fRD" id="orx-AW-E4r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
