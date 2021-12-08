@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var NameLabel: UILabel!
     @IBOutlet weak var Numincrease: UILabel!
     var increase=0
+    let Rname:[String]=["RINAI","Joli","Sarah","Nora","joo","Qahtan"]
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -19,15 +20,12 @@ class ViewController: UIViewController {
     @IBAction func btn(_ sender: Any) {
         
         
-        let Rname:[String]=["RINAI","Joli","Sarah","Nora","joo","Qahtan"]
+       
         
         NameLabel.text=Rname.randomElement()
-        increase+=1
+        increase=Int.random(in: 1...5)
         Numincrease.text=String(increase)
        
-        for _ in 1...7{
-           
-            if increase<7{
             switch (increase)  {
             case 1:
                 Numincrease.textColor = UIColor.red
@@ -50,8 +48,8 @@ class ViewController: UIViewController {
             }
        
 
-            }
-            }
+            
+          
             
         }}
   
